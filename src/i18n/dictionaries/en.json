@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Hank Hong — Backend & Full-Stack Developer",
-    "description": "Portfolio of Hank Hong — a backend-focused full-stack developer. Scalable APIs and services on AWS & Docker, plus AI-assisted frontend and app work. Projects and writing."
+    "title": "hankh.dev — Backend & Full-Stack Developer",
+    "description": "Portfolio of hankh.dev — a backend-focused full-stack developer. Scalable APIs and services on AWS & Docker, plus AI-assisted frontend and app work. Projects and writing."
   },
   "nav": {
     "about": "About",
@@ -16,7 +16,7 @@
   },
   "hero": {
     "greeting": "Hi, I'm",
-    "name": "Hank Hong",
+    "name": "hankh.dev",
     "role": "Backend & Full-Stack Developer",
     "tagline": "I build reliable APIs and backends on AWS and Docker — and now reach across frontend and app with AI-assisted development.",
     "ctaPrimary": "View projects",

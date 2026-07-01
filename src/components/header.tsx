@@ -37,7 +37,7 @@ export function Header({ locale, dict }: HeaderProps) {
           className="font-mono text-sm font-semibold tracking-tight"
           onClick={() => setOpen(false)}
         >
-          hank<span className="text-accent">.</span>dev
+          hankh<span className="text-accent">.</span>dev
         </Link>
 
         {/* Desktop nav */}

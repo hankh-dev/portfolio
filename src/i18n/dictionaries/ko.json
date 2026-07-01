@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Hank Hong — 백엔드 · 풀스택 개발자",
-    "description": "확장 가능한 API 설계와 서버 개발이 강점인 풀스택 개발자 Hank Hong의 포트폴리오. AWS·Docker 기반 백엔드부터 AI를 활용한 프론트엔드·앱까지. 프로젝트와 글을 소개합니다."
+    "title": "hankh.dev — 백엔드 · 풀스택 개발자",
+    "description": "확장 가능한 API 설계와 서버 개발이 강점인 풀스택 개발자 hankh.dev의 포트폴리오. AWS·Docker 기반 백엔드부터 AI를 활용한 프론트엔드·앱까지. 프로젝트와 글을 소개합니다."
   },
   "nav": {
     "about": "소개",
@@ -16,7 +16,7 @@
   },
   "hero": {
     "greeting": "안녕하세요, 저는",
-    "name": "Hank Hong",
+    "name": "hankh.dev",
     "role": "백엔드 · 풀스택 개발자",
     "tagline": "AWS·Docker 위에서 안정적인 API와 백엔드를 만들고, 이제 AI를 활용해 프론트엔드와 앱까지 아우릅니다.",
     "ctaPrimary": "프로젝트 보기",

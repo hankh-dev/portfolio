@@ -4,7 +4,7 @@ import type { Locale } from "@/i18n/config";
 export type Localized = Record<Locale, string>;
 
 export const profile = {
-  name: "Hank Hong",
+  name: "hankh.dev",
   email: "hankh.dev@gmail.com",
   /** Public, shareable links. Replace with your own. */
   socials: {
