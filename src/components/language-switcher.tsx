@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { locales, type Locale } from "@/i18n/config";
 
@@ -16,14 +15,19 @@ export function LanguageSwitcher({ current }: { current: Locale }) {
   }
 
   return (
+    // Plain <a> for a full-page navigation on locale change. A soft (client)
+    // navigation would re-render the [locale] layout — and with it next-themes'
+    // injected <script>, which React flags on the client. A hard nav also
+    // guarantees the <html lang> attribute is refreshed correctly.
     <div className="flex items-center rounded-md border border-border text-xs font-medium">
       {locales.map((locale, i) => {
         const active = locale === current;
         return (
-          <Link
+          <a
             key={locale}
             href={pathForLocale(locale)}
             aria-current={active ? "true" : undefined}
+            hrefLang={locale}
             className={[
               "px-2.5 py-1.5 uppercase transition-colors",
               i > 0 ? "border-l border-border" : "",
@@ -33,7 +37,7 @@ export function LanguageSwitcher({ current }: { current: Locale }) {
             ].join(" ")}
           >
             {locale}
-          </Link>
+          </a>
         );
       })}
     </div>
