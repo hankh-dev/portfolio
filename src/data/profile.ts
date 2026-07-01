@@ -26,23 +26,27 @@ export type SkillGroup = {
 export const skillGroups: SkillGroup[] = [
   {
     category: { ko: "언어", en: "Languages" },
-    items: ["TypeScript", "JavaScript", "HTML", "CSS"],
+    items: ["Java", "TypeScript", "JavaScript", "Python", "Go"],
   },
   {
-    category: { ko: "프레임워크", en: "Frameworks" },
-    items: ["React", "Next.js", "Node.js"],
+    category: { ko: "백엔드", en: "Backend" },
+    items: ["Spring", "NestJS", "Node.js", "JPA", "TypeORM", "REST", "Swagger", "Kafka"],
   },
   {
-    category: { ko: "스타일링", en: "Styling" },
-    items: ["Tailwind CSS", "CSS Modules", "Framer Motion"],
+    category: { ko: "데이터베이스", en: "Databases" },
+    items: ["MySQL", "MariaDB", "PostgreSQL", "MSSQL", "Oracle", "Redis", "Elasticsearch"],
   },
   {
-    category: { ko: "도구", en: "Tooling" },
-    items: ["Git", "Vite", "Vitest", "Playwright", "Storybook"],
+    category: { ko: "인프라 · DevOps", en: "Infra & DevOps" },
+    items: ["AWS (EC2, S3, Lambda, ALB)", "Docker", "Cloudflare"],
   },
   {
-    category: { ko: "협업", en: "Collaboration" },
-    items: ["Figma", "REST", "GraphQL", "Jira"],
+    category: { ko: "프론트엔드 · 앱", en: "Frontend & App" },
+    items: ["Next.js", "React Native (Expo)", "HTML", "CSS"],
+  },
+  {
+    category: { ko: "AI · 도구", en: "AI & Tools" },
+    items: ["Claude Code", "Codex", "Antigravity", "Git", "Figma"],
   },
 ];
 

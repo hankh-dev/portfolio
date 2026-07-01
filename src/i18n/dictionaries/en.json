@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Hank Hong — Frontend Developer",
-    "description": "Portfolio of Hank Hong, a frontend developer building fast, robust web experiences. Projects, skills, experience, and writing."
+    "title": "Hank Hong — Backend & Full-Stack Developer",
+    "description": "Portfolio of Hank Hong — a backend-focused full-stack developer. Scalable APIs and services on AWS & Docker, plus AI-assisted frontend and app work. Projects and writing."
   },
   "nav": {
     "about": "About",
@@ -17,8 +17,8 @@
   "hero": {
     "greeting": "Hi, I'm",
     "name": "Hank Hong",
-    "role": "Frontend Developer",
-    "tagline": "I care about interfaces that reach people, and I build fast, resilient web experiences.",
+    "role": "Backend & Full-Stack Developer",
+    "tagline": "I build reliable APIs and backends on AWS and Docker — and now reach across frontend and app with AI-assisted development.",
     "ctaPrimary": "View projects",
     "ctaSecondary": "Get in touch",
     "scroll": "Scroll"
@@ -27,8 +27,8 @@
     "heading": "About",
     "kicker": "About",
     "body": [
-      "I'm a frontend developer who values the balance between user experience and code quality. Working mainly with React and TypeScript, I love crafting interfaces that get the small details right.",
-      "I enjoy turning complex problems into simple solutions, collaborating closely with design and product to ship polished work. I pick up new tools quickly, but I apply them in proven, dependable ways."
+      "My core strength is the backend: designing scalable APIs and services, and running them on AWS and Docker to build reliable, maintainable systems.",
+      "I started in web development and went deep on the backend; now I use AI-assisted development to expand across frontend and app, taking ideas all the way to shipped products. I pick up new tools fast, but apply them in proven, reliable ways."
     ]
   },
   "skills": {
