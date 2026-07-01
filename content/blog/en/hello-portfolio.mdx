@@ -1,0 +1,32 @@
+---
+title: "Rebuilding My Portfolio"
+description: "Why I rebuilt my portfolio with Next.js and Tailwind CSS, and what I learned."
+date: "2026-06-20"
+tags: ["Next.js", "Retrospective"]
+---
+
+I rebuilt my portfolio. It used to be a static single page; now it's structured to hold a blog and multiple languages.
+
+## Why Next.js
+
+The two biggest reasons were **discoverability** and **writing**. A portfolio only matters if someone finds it, and server-side rendering plus static generation fit that goal well.
+
+- File-based routing: add a file, get a page
+- Image optimization out of the box
+- MDX to mix prose and components
+
+## A snippet
+
+Dark mode was easy with `next-themes`.
+
+```tsx
+const { resolvedTheme, setTheme } = useTheme();
+
+<button onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}>
+  Toggle theme
+</button>
+```
+
+## Wrapping up
+
+There's no perfect tool, but there are tools that fit the purpose. This choice should age well.
