@@ -26,7 +26,7 @@ export type SkillGroup = {
 export const skillGroups: SkillGroup[] = [
   {
     category: { ko: "언어", en: "Languages" },
-    items: ["Java", "TypeScript", "JavaScript", "Python", "Go"],
+    items: ["Java", "Kotlin", "TypeScript", "JavaScript", "Python", "Go"],
   },
   {
     category: { ko: "백엔드", en: "Backend" },
