@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "title": "Hank Hong — Frontend Developer",
+    "description": "Portfolio of Hank Hong, a frontend developer building fast, robust web experiences. Projects, skills, experience, and writing."
+  },
+  "nav": {
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "experience": "Experience",
+    "blog": "Blog",
+    "contact": "Contact",
+    "themeToggle": "Toggle theme",
+    "menu": "Menu",
+    "home": "Home"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "name": "Hank Hong",
+    "role": "Frontend Developer",
+    "tagline": "I care about interfaces that reach people, and I build fast, resilient web experiences.",
+    "ctaPrimary": "View projects",
+    "ctaSecondary": "Get in touch",
+    "scroll": "Scroll"
+  },
+  "about": {
+    "heading": "About",
+    "kicker": "About",
+    "body": [
+      "I'm a frontend developer who values the balance between user experience and code quality. Working mainly with React and TypeScript, I love crafting interfaces that get the small details right.",
+      "I enjoy turning complex problems into simple solutions, collaborating closely with design and product to ship polished work. I pick up new tools quickly, but I apply them in proven, dependable ways."
+    ]
+  },
+  "skills": {
+    "heading": "Tech Stack",
+    "kicker": "Skills",
+    "subheading": "The tools and technologies I reach for most."
+  },
+  "projects": {
+    "heading": "Projects",
+    "kicker": "Projects",
+    "subheading": "Selected work I've designed, built, and refined.",
+    "viewProject": "Live site",
+    "viewCode": "View code"
+  },
+  "experience": {
+    "heading": "Experience",
+    "kicker": "Experience",
+    "subheading": "The path I've taken so far.",
+    "present": "Present"
+  },
+  "contact": {
+    "heading": "Get in touch",
+    "kicker": "Contact",
+    "subheading": "Have a project in mind or just want to say hi? Drop me a message.",
+    "nameLabel": "Name",
+    "namePlaceholder": "Jane Doe",
+    "emailLabel": "Email",
+    "emailPlaceholder": "you@example.com",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Tell me anything.",
+    "send": "Send message",
+    "sending": "Sending…",
+    "success": "Your message has been sent. I'll get back to you soon!",
+    "errorValidation": "Please fill in every field correctly.",
+    "errorSend": "Something went wrong. Please try again in a moment.",
+    "or": "or email me directly"
+  },
+  "blog": {
+    "heading": "Blog",
+    "kicker": "Writing",
+    "subheading": "Notes and thoughts from building things.",
+    "readMore": "Read more",
+    "backToList": "← All posts",
+    "backToHome": "← Back home",
+    "empty": "No posts yet.",
+    "minRead": "min read",
+    "navTitle": "Blog"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "builtWith": "Built with Next.js & Tailwind CSS"
+  }
+}

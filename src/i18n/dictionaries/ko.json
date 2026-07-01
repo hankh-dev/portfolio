@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "title": "Hank Hong — 프론트엔드 개발자",
+    "description": "웹을 만드는 프론트엔드 개발자 Hank Hong의 포트폴리오. 프로젝트, 기술 스택, 경력, 그리고 글을 소개합니다."
+  },
+  "nav": {
+    "about": "소개",
+    "skills": "기술",
+    "projects": "프로젝트",
+    "experience": "경력",
+    "blog": "블로그",
+    "contact": "연락",
+    "themeToggle": "테마 전환",
+    "menu": "메뉴",
+    "home": "홈"
+  },
+  "hero": {
+    "greeting": "안녕하세요, 저는",
+    "name": "Hank Hong",
+    "role": "프론트엔드 개발자",
+    "tagline": "사용자에게 닿는 인터페이스를 고민하고, 빠르고 견고한 웹을 만듭니다.",
+    "ctaPrimary": "프로젝트 보기",
+    "ctaSecondary": "연락하기",
+    "scroll": "스크롤"
+  },
+  "about": {
+    "heading": "소개",
+    "kicker": "About",
+    "body": [
+      "사용자 경험과 코드 품질 사이의 균형을 중요하게 생각하는 프론트엔드 개발자입니다. React와 TypeScript를 중심으로, 작은 디테일까지 신경 쓴 인터페이스를 만드는 일을 좋아합니다.",
+      "복잡한 문제를 단순하게 풀어내는 과정을 즐기며, 디자인·기획과 긴밀하게 협업하면서 제품을 완성도 있게 다듬는 데 집중합니다. 새로운 기술은 빠르게 학습하되, 검증된 방식으로 안정적으로 적용하려 노력합니다."
+    ]
+  },
+  "skills": {
+    "heading": "기술 스택",
+    "kicker": "Skills",
+    "subheading": "주로 사용하는 도구와 기술입니다."
+  },
+  "projects": {
+    "heading": "프로젝트",
+    "kicker": "Projects",
+    "subheading": "직접 만들고 다듬은 대표 작업들입니다.",
+    "viewProject": "사이트 보기",
+    "viewCode": "코드 보기"
+  },
+  "experience": {
+    "heading": "경력",
+    "kicker": "Experience",
+    "subheading": "지금까지 걸어온 길입니다.",
+    "present": "현재"
+  },
+  "contact": {
+    "heading": "연락하기",
+    "kicker": "Contact",
+    "subheading": "협업 제안이나 궁금한 점이 있다면 편하게 메시지를 남겨주세요.",
+    "nameLabel": "이름",
+    "namePlaceholder": "홍길동",
+    "emailLabel": "이메일",
+    "emailPlaceholder": "you@example.com",
+    "messageLabel": "메시지",
+    "messagePlaceholder": "어떤 이야기든 환영합니다.",
+    "send": "메시지 보내기",
+    "sending": "보내는 중…",
+    "success": "메시지가 전송되었습니다. 곧 답장드릴게요!",
+    "errorValidation": "모든 항목을 올바르게 입력해 주세요.",
+    "errorSend": "전송에 실패했습니다. 잠시 후 다시 시도해 주세요.",
+    "or": "또는 직접 이메일을 보내셔도 됩니다"
+  },
+  "blog": {
+    "heading": "블로그",
+    "kicker": "Writing",
+    "subheading": "개발하면서 배운 것과 생각을 기록합니다.",
+    "readMore": "읽어보기",
+    "backToList": "← 블로그 목록",
+    "backToHome": "← 홈으로",
+    "empty": "아직 작성된 글이 없습니다.",
+    "minRead": "분 분량",
+    "navTitle": "블로그"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "builtWith": "Next.js와 Tailwind CSS로 제작"
+  }
+}

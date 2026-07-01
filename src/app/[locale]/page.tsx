@@ -1,0 +1,32 @@
+import { notFound } from "next/navigation";
+import { getDictionary } from "@/i18n/dictionaries";
+import { isLocale, type Locale } from "@/i18n/config";
+import { Hero } from "@/components/sections/hero";
+import { About } from "@/components/sections/about";
+import { Skills } from "@/components/sections/skills";
+import { Projects } from "@/components/sections/projects";
+import { Experience } from "@/components/sections/experience";
+import { Contact } from "@/components/sections/contact";
+
+export default async function HomePage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  if (!isLocale(locale)) notFound();
+
+  const l = locale as Locale;
+  const dict = await getDictionary(l);
+
+  return (
+    <>
+      <Hero dict={dict.hero} locale={l} />
+      <About dict={dict.about} />
+      <Skills dict={dict.skills} locale={l} />
+      <Projects dict={dict.projects} locale={l} />
+      <Experience dict={dict.experience} locale={l} />
+      <Contact dict={dict.contact} />
+    </>
+  );
+}
