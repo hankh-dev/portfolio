@@ -42,7 +42,7 @@ export const skillGroups: SkillGroup[] = [
   },
   {
     category: { ko: "프론트엔드 · 앱", en: "Frontend & App" },
-    items: ["Next.js", "React Native (Expo)", "HTML", "CSS"],
+    items: ["React", "Next.js", "React Native (Expo)", "HTML", "CSS"],
   },
   {
     category: { ko: "AI · 도구", en: "AI & Tools" },
