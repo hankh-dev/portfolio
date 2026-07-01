@@ -24,7 +24,7 @@ export function Header({ locale, dict }: HeaderProps) {
     { href: `${base}#about`, label: dict.about },
     { href: `${base}#skills`, label: dict.skills },
     { href: `${base}#projects`, label: dict.projects },
-    { href: `${base}#experience`, label: dict.experience },
+    // { href: `${base}#experience`, label: dict.experience }, // hidden with the Experience section
     { href: `${base}/blog`, label: dict.blog, active: onBlog },
     { href: `${base}#contact`, label: dict.contact },
   ];
