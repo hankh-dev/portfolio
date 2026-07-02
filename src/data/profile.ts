@@ -68,7 +68,7 @@ export const projects: Project[] = [
   {
     slug: "serobonneung",
     title: "세로본능",
-    year: "2025",
+    year: "2025–2026",
     description: {
       ko: "숏폼 영상 앱의 백엔드를 설계·개발했습니다. 영상·자막 업로드와 mp4→HLS 변환 파이프라인부터 결제·정산까지, 서비스의 핵심 서버를 만들었습니다. (재택)",
       en: "Backend design and development for a short-form video app — from video/subtitle uploads and an mp4→HLS transcoding pipeline to payments and settlement, building the service's core servers. (Remote)",
