@@ -31,9 +31,21 @@ export function Projects({
               <h3 className="text-lg font-semibold">{project.title}</h3>
               <span className="font-mono text-xs text-muted">{project.year}</span>
             </div>
-            <p className="mt-3 flex-1 text-sm leading-relaxed text-muted">
-              {project.description[locale]}
-            </p>
+            <div className="mt-3 flex-1">
+              <p className="text-sm leading-relaxed text-muted">
+                {project.description[locale]}
+              </p>
+              {project.highlights && (
+                <ul className="mt-3 space-y-1.5 text-sm text-muted">
+                  {project.highlights[locale].map((item) => (
+                    <li key={item} className="flex gap-2">
+                      <span className="mt-[7px] h-1 w-1 shrink-0 rounded-full bg-accent" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
             <ul className="mt-4 flex flex-wrap gap-2">
               {project.tags.map((tag) => (
                 <li
@@ -44,30 +56,32 @@ export function Projects({
                 </li>
               ))}
             </ul>
-            <div className="mt-5 flex flex-wrap gap-4 text-sm font-medium">
-              {project.href && (
-                <a
-                  href={project.href}
-                  target={project.href.startsWith("http") ? "_blank" : undefined}
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1 text-foreground transition-colors hover:text-accent"
-                >
-                  {dict.viewProject}
-                  <ArrowUpRight className="h-4 w-4" />
-                </a>
-              )}
-              {project.repo && (
-                <a
-                  href={project.repo}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 text-muted transition-colors hover:text-foreground"
-                >
-                  <Code2 className="h-4 w-4" />
-                  {dict.viewCode}
-                </a>
-              )}
-            </div>
+            {(project.href || project.repo) && (
+              <div className="mt-5 flex flex-wrap gap-4 text-sm font-medium">
+                {project.href && (
+                  <a
+                    href={project.href}
+                    target={project.href.startsWith("http") ? "_blank" : undefined}
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1 text-foreground transition-colors hover:text-accent"
+                  >
+                    {dict.viewProject}
+                    <ArrowUpRight className="h-4 w-4" />
+                  </a>
+                )}
+                {project.repo && (
+                  <a
+                    href={project.repo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 text-muted transition-colors hover:text-foreground"
+                  >
+                    <Code2 className="h-4 w-4" />
+                    {dict.viewCode}
+                  </a>
+                )}
+              </div>
+            )}
           </Reveal>
         ))}
       </div>

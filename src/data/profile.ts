@@ -55,6 +55,8 @@ export type Project = {
   title: string;
   year: string;
   description: Localized;
+  /** Optional scannable bullet points shown on the card. */
+  highlights?: Record<Locale, string[]>;
   tags: string[];
   /** Optional outbound links. */
   href?: string;
@@ -63,6 +65,33 @@ export type Project = {
 };
 
 export const projects: Project[] = [
+  {
+    slug: "serobonneung",
+    title: "세로본능",
+    year: "2025",
+    description: {
+      ko: "숏폼 영상 앱의 백엔드를 설계·개발했습니다. 영상·자막 업로드와 mp4→HLS 변환 파이프라인부터 결제·정산까지, 서비스의 핵심 서버를 만들었습니다. (재택)",
+      en: "Backend design and development for a short-form video app — from video/subtitle uploads and an mp4→HLS transcoding pipeline to payments and settlement, building the service's core servers. (Remote)",
+    },
+    highlights: {
+      ko: [
+        "DB·API 설계 및 개발 — 영상·자막 업로드, mp4→HLS 변환",
+        "토스페이먼츠 등 PG 결제·정산, NICE 본인인증 연동",
+        "푸시·배치 서버 및 Next.js 어드민 개발",
+        "AWS·Cloudflare 인프라 구성, GitLab CI/CD 자동화",
+        "React Native(Expo) 앱·웹 개발 참여",
+      ],
+      en: [
+        "Designed DB & APIs — video/subtitle uploads, mp4→HLS transcoding",
+        "Payments & settlement (Toss Payments/PG); NICE identity verification",
+        "Push & batch servers, plus a Next.js admin dashboard",
+        "AWS & Cloudflare infrastructure; GitLab CI/CD automation",
+        "Contributed to the React Native (Expo) app and web",
+      ],
+    },
+    tags: ["NestJS", "MySQL", "TypeORM", "AWS", "Cloudflare", "Docker", "React Native (Expo)", "Next.js"],
+    featured: true,
+  },
   {
     slug: "portfolio",
     title: "Portfolio Website",
