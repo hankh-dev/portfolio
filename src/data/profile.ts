@@ -92,6 +92,7 @@ export const projects: Project[] = [
       ],
     },
     tags: ["NestJS", "MySQL", "TypeORM", "AWS", "Cloudflare", "Docker", "React Native (Expo)", "Next.js"],
+    href: "https://serocut.com",
     featured: true,
   },
   {
