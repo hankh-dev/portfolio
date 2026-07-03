@@ -1,7 +1,9 @@
-# Hank Hong — Developer Portfolio
+# hankh.dev — Developer Portfolio
+
+**🔗 라이브: https://portfolio-tau-lake-94.vercel.app**
 
 Next.js(App Router) + TypeScript + Tailwind CSS로 만든 **다국어 개발자 포트폴리오**입니다.
-Minimal / Clean 디자인에 다크모드, MDX 블로그, 연락 폼, 스크롤 애니메이션을 갖췄습니다.
+Minimal / Clean 디자인에 다크모드, MDX 블로그, 스크롤 애니메이션을 갖췄습니다.
 
 ## ✨ 주요 기능
 

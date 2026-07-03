@@ -145,6 +145,7 @@ export const projects: Project[] = [
     },
     tags: ["Next.js", "TypeScript", "Tailwind CSS", "i18n"],
     links: [
+      { href: "https://portfolio-tau-lake-94.vercel.app", label: { ko: "사이트", en: "Website" } },
       { href: "https://github.com/hankh-dev/portfolio", label: { ko: "GitHub", en: "GitHub" } },
     ],
     featured: true,
