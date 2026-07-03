@@ -1,4 +1,4 @@
-import { ArrowUpRight, Code2 } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import { Reveal } from "@/components/reveal";
 import { Section } from "@/components/section";
 import { projects } from "@/data/profile";
@@ -56,30 +56,20 @@ export function Projects({
                 </li>
               ))}
             </ul>
-            {(project.href || project.repo) && (
-              <div className="mt-5 flex flex-wrap gap-4 text-sm font-medium">
-                {project.href && (
+            {project.links && project.links.length > 0 && (
+              <div className="mt-5 flex flex-wrap gap-x-4 gap-y-2 text-sm font-medium">
+                {project.links.map((link) => (
                   <a
-                    href={project.href}
-                    target={project.href.startsWith("http") ? "_blank" : undefined}
+                    key={link.href}
+                    href={link.href}
+                    target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1 text-foreground transition-colors hover:text-accent"
                   >
-                    {project.hrefLabel?.[locale] ?? dict.viewProject}
-                    <ArrowUpRight className="h-4 w-4" />
+                    {link.label[locale]}
+                    <ArrowUpRight className="h-3.5 w-3.5" />
                   </a>
-                )}
-                {project.repo && (
-                  <a
-                    href={project.repo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 text-muted transition-colors hover:text-foreground"
-                  >
-                    <Code2 className="h-4 w-4" />
-                    {dict.viewCode}
-                  </a>
-                )}
+                ))}
               </div>
             )}
           </Reveal>

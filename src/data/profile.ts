@@ -50,6 +50,8 @@ export const skillGroups: SkillGroup[] = [
   },
 ];
 
+export type ProjectLink = { href: string; label: Localized };
+
 export type Project = {
   slug: string;
   title: string;
@@ -58,11 +60,8 @@ export type Project = {
   /** Optional scannable bullet points shown on the card. */
   highlights?: Record<Locale, string[]>;
   tags: string[];
-  /** Optional outbound links. */
-  href?: string;
-  /** Custom label for the href link (defaults to the dictionary's "view project"). */
-  hrefLabel?: Localized;
-  repo?: string;
+  /** Outbound links shown as a row at the bottom of the card. */
+  links?: ProjectLink[];
   featured?: boolean;
 };
 
@@ -92,7 +91,17 @@ export const projects: Project[] = [
       ],
     },
     tags: ["NestJS", "MySQL", "TypeORM", "AWS", "Cloudflare", "Docker", "React Native (Expo)", "Next.js"],
-    href: "https://serocut.com",
+    links: [
+      { href: "https://serocut.com", label: { ko: "사이트", en: "Website" } },
+      {
+        href: "https://play.google.com/store/apps/details?id=com.smileent.sero",
+        label: { ko: "Google Play", en: "Google Play" },
+      },
+      {
+        href: "https://apps.apple.com/kr/app/id6747154564",
+        label: { ko: "App Store", en: "App Store" },
+      },
+    ],
     featured: true,
   },
   {
@@ -118,8 +127,12 @@ export const projects: Project[] = [
       ],
     },
     tags: ["Expo", "React Native", "TypeScript", "expo-router", "Reanimated", "EAS"],
-    href: "https://play.google.com/store/apps/details?id=xyz.memocat.app",
-    hrefLabel: { ko: "Play 스토어", en: "Play Store" },
+    links: [
+      {
+        href: "https://play.google.com/store/apps/details?id=xyz.memocat.app",
+        label: { ko: "Google Play", en: "Google Play" },
+      },
+    ],
     featured: true,
   },
   {
@@ -131,7 +144,9 @@ export const projects: Project[] = [
       en: "A multilingual portfolio built with Next.js and Tailwind CSS — dark mode, an MDX blog, scroll animations, and a contact form. (This site.)",
     },
     tags: ["Next.js", "TypeScript", "Tailwind CSS", "i18n"],
-    repo: "https://github.com/hankh-dev/portfolio",
+    links: [
+      { href: "https://github.com/hankh-dev/portfolio", label: { ko: "GitHub", en: "GitHub" } },
+    ],
     featured: true,
   },
 ];
