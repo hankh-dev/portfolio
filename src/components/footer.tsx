@@ -41,7 +41,7 @@ export function Footer({ dict }: FooterProps) {
     { href: profile.socials.linkedin, label: "LinkedIn", Icon: LinkedInIcon },
     { href: profile.socials.x, label: "X", Icon: XIcon },
     { href: `mailto:${profile.email}`, label: "Email", Icon: Mail },
-  ];
+  ].filter((social) => social.href);
 
   return (
     <footer className="border-t border-border">

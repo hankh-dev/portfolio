@@ -6,11 +6,11 @@ export type Localized = Record<Locale, string>;
 export const profile = {
   name: "hankh.dev",
   email: "hankh.dev@gmail.com",
-  /** Public, shareable links. Replace with your own. */
+  /** Public, shareable links. An empty string hides that icon in the footer. */
   socials: {
-    github: "https://github.com/",
-    linkedin: "https://www.linkedin.com/",
-    x: "https://x.com/",
+    github: "https://github.com/hankh-dev",
+    linkedin: "",
+    x: "",
   },
   location: {
     ko: "대한민국 · 서울",
