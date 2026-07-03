@@ -126,50 +126,12 @@ export const projects: Project[] = [
     title: "Portfolio Website",
     year: "2026",
     description: {
-      ko: "Next.js와 Tailwind CSS로 만든 다국어 포트폴리오. 다크모드, MDX 블로그, 스크롤 애니메이션을 직접 구현했습니다.",
-      en: "A multilingual portfolio built with Next.js and Tailwind CSS, featuring dark mode, an MDX blog, and scroll animations.",
+      ko: "Next.js와 Tailwind CSS로 만든 다국어 포트폴리오. 다크모드, MDX 블로그, 스크롤 애니메이션, 연락 폼을 직접 구현했습니다. (이 사이트)",
+      en: "A multilingual portfolio built with Next.js and Tailwind CSS — dark mode, an MDX blog, scroll animations, and a contact form. (This site.)",
     },
     tags: ["Next.js", "TypeScript", "Tailwind CSS", "i18n"],
-    href: "#",
-    repo: "https://github.com/",
+    repo: "https://github.com/hankh-dev/portfolio",
     featured: true,
-  },
-  {
-    slug: "realtime-dashboard",
-    title: "Realtime Analytics Dashboard",
-    year: "2025",
-    description: {
-      ko: "WebSocket 기반 실시간 데이터 시각화 대시보드. 수천 개의 이벤트를 끊김 없이 렌더링하도록 가상화와 메모이제이션을 적용했습니다.",
-      en: "A WebSocket-powered realtime data dashboard. Applied virtualization and memoization to render thousands of events without jank.",
-    },
-    tags: ["React", "WebSocket", "D3", "Zustand"],
-    href: "#",
-    repo: "https://github.com/",
-    featured: true,
-  },
-  {
-    slug: "storefront",
-    title: "E-commerce Storefront",
-    year: "2024",
-    description: {
-      ko: "서버 사이드 렌더링과 이미지 최적화로 LCP를 40% 개선한 커머스 프론트엔드. 결제·장바구니 플로우를 설계했습니다.",
-      en: "A commerce frontend that improved LCP by 40% through SSR and image optimization. Designed the cart and checkout flows.",
-    },
-    tags: ["Next.js", "Stripe", "React Query"],
-    href: "#",
-    repo: "https://github.com/",
-    featured: true,
-  },
-  {
-    slug: "design-system",
-    title: "Component Design System",
-    year: "2024",
-    description: {
-      ko: "팀 전반에서 재사용하는 컴포넌트 라이브러리. 접근성(A11y)을 기본으로 갖추고 Storybook으로 문서화했습니다.",
-      en: "A shared component library used across teams. Built accessibility in by default and documented everything in Storybook.",
-    },
-    tags: ["React", "Storybook", "A11y"],
-    repo: "https://github.com/",
   },
 ];
 
