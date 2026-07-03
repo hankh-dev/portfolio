@@ -60,6 +60,8 @@ export type Project = {
   tags: string[];
   /** Optional outbound links. */
   href?: string;
+  /** Custom label for the href link (defaults to the dictionary's "view project"). */
+  hrefLabel?: Localized;
   repo?: string;
   featured?: boolean;
 };
@@ -90,6 +92,33 @@ export const projects: Project[] = [
       ],
     },
     tags: ["NestJS", "MySQL", "TypeORM", "AWS", "Cloudflare", "Docker", "React Native (Expo)", "Next.js"],
+    featured: true,
+  },
+  {
+    slug: "memocat",
+    title: "메모캣",
+    year: "2026",
+    description: {
+      ko: "혼자 기획·디자인·개발해 Google Play에 출시한 메모 앱입니다. Expo(React Native)로 만든 오프라인 메모 앱으로, 드래그로 순서를 바꾸며 빠르게 기록할 수 있습니다.",
+      en: "A memo app I planned, designed, built, and shipped to Google Play solo — an offline note-taking app made with Expo (React Native), with drag-to-reorder and quick capture.",
+    },
+    highlights: {
+      ko: [
+        "기획·디자인·개발·출시까지 1인 개발",
+        "Expo(React Native)·TypeScript, expo-router 파일 기반 라우팅",
+        "AsyncStorage 오프라인 저장, 드래그 정렬(햅틱 피드백)",
+        "EAS 빌드 및 OTA 업데이트로 배포",
+      ],
+      en: [
+        "Solo end-to-end: planning, design, development, and release",
+        "Expo (React Native) & TypeScript with expo-router file-based routing",
+        "Offline storage via AsyncStorage; drag-to-reorder with haptics",
+        "EAS builds and OTA updates for delivery",
+      ],
+    },
+    tags: ["Expo", "React Native", "TypeScript", "expo-router", "Reanimated", "EAS"],
+    href: "https://play.google.com/store/apps/details?id=xyz.memocat.app",
+    hrefLabel: { ko: "Play 스토어", en: "Play Store" },
     featured: true,
   },
   {

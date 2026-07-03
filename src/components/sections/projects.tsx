@@ -65,7 +65,7 @@ export function Projects({
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1 text-foreground transition-colors hover:text-accent"
                   >
-                    {dict.viewProject}
+                    {project.hrefLabel?.[locale] ?? dict.viewProject}
                     <ArrowUpRight className="h-4 w-4" />
                   </a>
                 )}
