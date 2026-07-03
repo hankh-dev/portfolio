@@ -26,7 +26,7 @@ export function Header({ locale, dict }: HeaderProps) {
     { href: `${base}#projects`, label: dict.projects },
     // { href: `${base}#experience`, label: dict.experience }, // hidden with the Experience section
     { href: `${base}/blog`, label: dict.blog, active: onBlog },
-    { href: `${base}#contact`, label: dict.contact },
+    // { href: `${base}#contact`, label: dict.contact }, // hidden with the Contact section
   ];
 
   return (

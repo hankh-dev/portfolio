@@ -1,5 +1,6 @@
 import { ArrowDown, ArrowRight } from "lucide-react";
 import { Reveal } from "@/components/reveal";
+import { profile } from "@/data/profile";
 import type { Locale } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/dictionaries";
 
@@ -43,7 +44,7 @@ export function Hero({
               <ArrowRight className="h-4 w-4" />
             </a>
             <a
-              href={`/${locale}#contact`}
+              href={`mailto:${profile.email}`}
               className="inline-flex items-center gap-2 rounded-full border border-border px-5 py-2.5 text-sm font-medium transition-colors hover:bg-foreground/5"
             >
               {dict.ctaSecondary}

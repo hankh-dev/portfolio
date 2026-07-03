@@ -6,7 +6,7 @@ import { About } from "@/components/sections/about";
 import { Skills } from "@/components/sections/skills";
 import { Projects } from "@/components/sections/projects";
 // import { Experience } from "@/components/sections/experience"; // hidden — uncomment to restore
-import { Contact } from "@/components/sections/contact";
+// import { Contact } from "@/components/sections/contact"; // hidden — uncomment to restore
 
 export default async function HomePage({
   params,
@@ -27,7 +27,8 @@ export default async function HomePage({
       <Projects dict={dict.projects} locale={l} />
       {/* Experience section hidden — uncomment the import above and this line to restore */}
       {/* <Experience dict={dict.experience} locale={l} /> */}
-      <Contact dict={dict.contact} />
+      {/* Contact section hidden — uncomment the import above and this line to restore */}
+      {/* <Contact dict={dict.contact} /> */}
     </>
   );
 }
