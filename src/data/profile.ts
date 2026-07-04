@@ -136,6 +136,34 @@ export const projects: Project[] = [
     featured: true,
   },
   {
+    slug: "gh-pulse",
+    title: "gh-pulse",
+    year: "2026",
+    description: {
+      ko: "GitHub 오픈소스 레포들의 지표(스타·포크·이슈)를 매일 자동 수집해 쌓고, FastAPI로 조회하는 미니 데이터 파이프라인입니다.",
+      en: "A mini data pipeline that collects daily metrics (stars, forks, issues) for GitHub open-source repos and serves them through a FastAPI query API.",
+    },
+    highlights: {
+      ko: [
+        "(repo, snapshot_date) 기본키 upsert로 멱등한 적재",
+        "pandas 정제 단계 분리 — 필드 추출·결측치 보정",
+        "GitHub Actions cron으로 서버 없는 일일 수집·자동 커밋",
+        "최신 스냅샷·시계열·트렌딩 조회 API, pytest 테스트",
+      ],
+      en: [
+        "Idempotent loads — upsert on a (repo, snapshot_date) primary key",
+        "Separate pandas cleaning step — field selection, missing-value fixes",
+        "Serverless daily collection via GitHub Actions cron with auto-commits",
+        "Query APIs for latest snapshots, history, and trending; pytest suite",
+      ],
+    },
+    tags: ["Python", "FastAPI", "SQLite", "pandas", "GitHub Actions", "pytest"],
+    links: [
+      { href: "https://github.com/hankh-dev/gh-pulse", label: { ko: "GitHub", en: "GitHub" } },
+    ],
+    featured: true,
+  },
+  {
     slug: "portfolio",
     title: "Portfolio Website",
     year: "2026",
